@@ -36,7 +36,7 @@ const docId = ref('')
         }
        const docRef = collection(db,'Todo')
        await addDoc(docRef,list);
-        closeModal();
+        closeModal(2);
         Swal.fire({
             position: "top-end",
             icon: 'success',
